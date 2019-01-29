@@ -1,22 +1,11 @@
 #include <iostream>
+#include <sstream>
+#include "rational.h"
+
 using namespace std;
 
-class Rational {
-public:
-    Rational() {}
-
-    Rational(int numerator, int denominator) { }
-
-    int Numerator() const {}
-
-    int Denominator() const {}
-
-private:
-
-};
-
 int main() {
-   
+
     // проверка работы интерфейса класса ======================================
 
     {
@@ -69,7 +58,7 @@ int main() {
 
     //end проверка работы интерфейса класса ===================================
 
-    // проверка работы operator+ operator- operator== =========================
+//    // проверка работы operator+ operator- operator== =========================
 
     {
         Rational r1(4, 6);
@@ -104,10 +93,10 @@ int main() {
     }
 
 
-    //end проверка работы operator+ operator- operator== ======================
+//    //end проверка работы operator+ operator- operator== ======================
 
 
-    // проверка работы operator* operator/  ===================================
+//    // проверка работы operator* operator/  ===================================
 
     {
         Rational a(2, 3);
@@ -131,10 +120,10 @@ int main() {
         }
     }
 
-    //end проверка работы operator* operator/  ================================
+//    //end проверка работы operator* operator/  ================================
 
 
-    // проверка работы operator>> operator<<  =================================
+//    // проверка работы operator>> operator<<  =================================
 
      {
         ostringstream output;
@@ -175,7 +164,7 @@ int main() {
         }
     }
 
-    //end проверка работы operator>> operator<<  ==============================
+////    //end проверка работы operator>> operator<<  ==============================
 
 
     cout << "OK" << endl;
